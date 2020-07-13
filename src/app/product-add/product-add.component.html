@@ -1,0 +1,22 @@
+<div class="card card-body mb-3">
+    <h2>Add Product</h2>
+    <form  (submit)="AddProduct()">
+        <div class="form-group">
+            <label>Product ID</label>
+            <input type="number" [(ngModel)]="product.Pid" class="form-control" name="PID" required >
+        </div>
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" [(ngModel)]="product.Pname"  class="form-control" name="Name" required minlength="2" >
+        </div>
+        <div class="form-group">
+            <label>Price</label>
+            <input type="number" [(ngModel)]="product.Price"  class="form-control" name="Price"  required>
+        </div>
+        <div class="form-group">
+            <label>Stock</label>
+            <input type="number" [(ngModel)]="product.Stock" class="form-control" name="Stock" >
+        </div>
+        <button  class="btn btn-block mb-3">Add Product</button>
+    </form>
+</div>
